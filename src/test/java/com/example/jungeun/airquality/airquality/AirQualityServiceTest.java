@@ -22,7 +22,7 @@ public class AirQualityServiceTest {
     public void testAirQualityServiceBasic() throws Exception {
         
         // 테스트 실행(메서드 호출)
-        String result = airQualityService.getAirQualityDataBasic();
+        String result = airQualityService.getAirQualityDataBasic("서울");
 
         // 결과 검증 - 제대로 실행된면 null 이 아니어야 함.
         assertNotNull(result); // 응답이 Null 인지 여부 확인

@@ -34,7 +34,7 @@ public class AirQualityController {
                 .andExpect(status().isOk()) // basic 엔드 포인트 접속 여부 확인
                 .andExpect(view().name("airQuality")) //올바른 view 가 return 되는지 여부 확인
                 .andExpect(model().attributeExists("airQualityData")) // 모델에 객체가 존재하는지 여부 확인
-        .andReturn();
+                .andReturn();
 
         // 모델에서 airQualityData 추출
         String json = result.getModelAndView().getModel().get("airQualityData").toString();
